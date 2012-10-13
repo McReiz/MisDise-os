@@ -1,0 +1,182 @@
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+html {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+body {
+  background: #26a5d4;
+  text-align: center;
+  font-family: 'ABeeZee', sans-serif;
+}
+#logo, aside, article {
+  display: inline-block;
+  vertical-align: top;
+}
+#redes {
+  z-index: 100;
+  position: fixed;
+  width: 200px;
+  left: -180px;
+  height: 200px;
+  background: -webkit-linear-gradient(top, #0b7096 4%, #408cc7 80%);
+  background: -moz-linear-gradient(top, #0b7096 4%, #408cc7 80%);
+  background: -ms-linear-gradient(top, #0b7096 4%, #408cc7 80%);
+  background: -o-linear-gradient(top, #0b7096 4%, #408cc7 80%);
+  background: linear-gradient(top, #0b7096 4%, #408cc7 80%);
+  border-radius: 180px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5), inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  color: white;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#redes a[target=_blank] {
+  display: block;
+}
+#redes p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#redes:hover {
+  left: -20px;
+  -webkit-transform: rotate(0deg);
+}
+header {
+  width: 100%;
+  background: #3d79d0;
+  background-image: -webkit-linear-gradient(top, #408cc7 35%, #26a5d4 100%);
+  background-image: -moz-linear-gradient(top, #408cc7 35%, #26a5d4 100%);
+  background-image: -ms-linear-gradient(top, #408cc7 35%, #26a5d4 100%);
+  background-image: -o-linear-gradient(top, #408cc7 35%, #26a5d4 100%);
+  background-image: linear-gradient(top, #408cc7 35%, #26a5d4 100%);
+  height: 100px;
+}
+header #logo {
+  width: 940px;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+header #logo h1 {
+  font-weight: bold;
+  color: #a2b2be;
+  font-size: 68px;
+  text-shadow: 0px 0px 0 #9babb7, 1px 0px 0 #93a3af, 2px 0px 0 #8c9ca8, 3px 0px 0 #8494a0, 4px 0px 0 #7d8d99, 5px 0px 0 #758591, 6px 0px 0 #6e7e8a, 7px 0px 6px rgba(0, 0, 0, 0), 7px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+nav {
+  display: inline-block;
+  vertical-align: top;
+  display: block;
+  margin-bottom: 10px;
+}
+nav ul {
+  width: 940px;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0b7096;
+  display: inline-block;
+  padding: 2px;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+nav ul li a:hover {
+  background: #408cc7;
+  -webkit-transform: scale(1.12) rotate(2deg);
+  -moz-transform: scale(1.12) rotate(2deg);
+  -ms-transform: scale(1.12) rotate(2deg);
+  -o-transform: scale(1.12) rotate(2deg);
+  transform: scale(1.12) rotate(2deg);
+}
+aside, article {
+  background: #eeeeee;
+  text-align: justify;
+  border-radius: 8px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5), inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+aside section, article section {
+  margin: 15px;
+}
+aside h2, article h2 {
+  text-align: center;
+}
+aside h5, article h5 {
+  text-align: center;
+}
+aside {
+  width: 300px;
+}
+article {
+  width: 630px;
+}
+footer {
+  margin-top: 10px;
+}
+a[title="reiz"] {
+  font-weight: bold;
+  color: #0b7096;
+}
