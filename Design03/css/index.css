@@ -1,0 +1,152 @@
+/*
+autor : McReiz
+Codeador : McReiz
+nombre de layout : DesignReizWeb10
+css, css3 y html5
+sitio web: www.reizweb.com.ar
+copyrihgt: 2012 - 2013 todos los derechos de autor reselvados
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Marko+One|Shadows+Into+Light);
+
+* {
+	margin:	0px;
+	padding: 0px;
+}
+body{
+	background: #a90707;
+}
+
+/*cuerpo del diseño*/
+
+
+
+
+
+
+header{
+	padding: 5px;
+	width: 90%;
+	max-width: 1050px;
+	height: 150px;
+	margin: 0 auto;
+	background:#840B0B;
+	border-left: 1px solid #710808;
+	border-right: 1px solid #710808;
+	border-bottom: 1px solid #710808;
+}
+header h1{
+	color: #fff;
+	margin: 45px 15px;
+	font-family: 'Shadows Into Light', cursive;
+}
+nav{
+	width: 90%;
+	padding: 0 5px;
+	border-radius: 0 0 8px 8px;
+	max-width: 1050px;
+	background:#bd1919;
+	margin: 0 auto;
+	border-left: 1px solid #840606;
+	border-right: 1px solid #840606;
+	border-bottom: 1px solid #840606;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px;
+	transition: background 1s;
+	-o-transition: background 1s;
+	-ms-transition: background 1s;
+	-moz-transition: background 1s;
+	-webkit-transition:background 1s;
+}
+nav ul li a:hover{
+	background: #840606;
+
+}
+#wrapper{
+	margin: 15px auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 8px;
+	padding: 5px;
+	background:#fff;
+	width: 90%;
+	max-width: 1050px;
+	border: #7C0A0A 1px solid
+}
+footer{
+	border-radius: 8px;
+	width: 90%;
+	font-weight: bold;
+	padding: 5px;
+	max-width: 1050px;
+	background:#fff;
+	margin: 0 auto;
+	border: #7C0A0A 1px solid
+}
+footer a{
+	text-decoration: none;
+	color :red;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+/*Wrapper*/
+
+article{
+	margin-left: 3px;
+	width: 70%;
+	background: #;
+	font-family: 'Marko One', serif;
+	font-size: 13px;
+	vertical-align: top;
+	display: inline-block;
+}
+aside{
+	width: 29%;
+	text-align: justify;
+	vertical-align: top;
+	background: #;
+	display: inline-block;
+}
+/*article*/
+article section h1{
+
+}
+article section{
+	text-align: justify;
+	margin: 15px 0;
+}
+aside hgroup{
+	margin-bottom: 10px;
+}
+aside hgroup h3{
+	background: #cb1919;
+	text-align: center;
+	color: #fff;
+	border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-top: 1px solid #840606;
+	border-left: 1px solid #840606;
+	border-right: 1px solid #840606;
+	padding: 5px 0 5px;
+}
+aside hgroup span{
+	background: #c3c3c3;
+	display: block;
+	border-radius: 0 0 12px 12px;
+	padding: 10px
+}

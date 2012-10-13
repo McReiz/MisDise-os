@@ -1,0 +1,237 @@
+@import url("http://fonts.googleapis.com/css?family=The+Girl+Next+Door");
+
+.title,h1,h2,h3,h4,h5,h6,h7{
+	font-family: 'The Girl Next Door', cursive;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background: #98b22f;
+	text-align: center;
+}
+
+/*estilo del menu*/
+nav{
+	background: #e5671a;
+	height: 40px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid #ac511a;
+}
+ul{
+	display: inline-block;
+	margin: 0px;
+}
+#cont{
+	width: 76%;
+	text-align: right;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+}
+ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: all .5s;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+	-moz-transition: .5s all;
+	-webkit-transition: all .5s;
+}
+ul li a:hover{
+	background:#fa9926;
+	transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+}
+.on{
+	background:#fa9926;
+}
+/* fin del estilo del menu */
+
+/*cuerpo general del diseño */
+aside, article{
+	display: inline-block;
+	vertical-align: top;
+}
+aside{
+	width: 20%;
+	min-width: 200px;
+}
+article{
+	width: 50%;
+	margin-top: 10px;
+	min-width: 600px;
+}
+/* fin del cuerpo general del diseño */
+
+/* estilo de la cabezara y los widget */
+aside header{
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+	padding: 10px 5px;
+	font-family: Comic Sans MS;
+	background:#d53905;
+	position: relative;
+	top: -40px
+
+}
+aside header h1{
+	text-align: center;
+}
+.widget{
+	background: #c1c1bf;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: 1px solid #afafae;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+	padding-bottom: 10px;
+}
+.title{
+	margin: 5px 10px;
+	padding: -1px;
+	border: 1px solid #afafae;
+	background: #dddddd;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* fin de los estilos de la cabezara y los widget */
+/* estilo del contenido del diseño */
+section{
+	background: #D8D22F;
+	border-radius: 10px 0 10px 0;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+section h2{
+	border-bottom: 1px dashed black;
+	margin: 0px;
+	text-align: center;
+}
+/* fin del estilo de contenido del diseño */
+footer{
+	font-weight:bold;
+}
+footer a{
+	color: red;
+	text-decoration: none;
+}
+footer a:hover{
+	color: yellow;
+	text-decoration: underline;
+}
+/* fin del estilo del footer */
+/*elementos extras */
+::selection{
+	color: yellow;
+	text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); 
+}
+/* Scrollbar */
+
+::-webkit-scrollbar 
+{
+
+	height: 20px;
+	overflow: visible;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb 
+{	
+	background-color: rgba(0, 0, 0, .4);
+	background-clip: padding-box;
+	cursor: pointer;
+	background: #D53905;
+	display: block;
+	min-height: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+	background-color: #D8D22F;
+}
+
+::-webkit-scrollbar-button 
+{
+	height: 0;
+	width: 0;
+}
+
+::-webkit-scrollbar-track 
+{	
+	background-clip: padding-box;
+	border-width: 0 0 0 4px;
+	border: solid transparent;
+
+}
+
+::-webkit-scrollbar-track:hover
+{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track-piece 
+{
+
+	background-clip: padding-box;	
+	background-color: #FA9926;
+}
+
+::-webkit-scrollbar-track-piece:hover
+{
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:vertical:start 
+{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:vertical:end 
+{
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:horizontal:start 
+{
+	border-top-left-radius:5px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:5px;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:horizontal:end 
+{
+	border-top-left-radius:0;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:0;
+}
+
+::-webkit-scrollbar-corner 
+{
+	background: transparent;
+}
+
+::-webkit-scrollbar-corner 
+{
+	background-clip: padding-box;
+	background-color: #F5F5F5;
+	border: solid white;
+	border-width: 3px 0 0 3px;
+}
