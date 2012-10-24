@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+*{
+	margin: 0px;
+	padding: 0px
+}
+
+a{
+	text-decoration: none;
+	color: #cfcfcf;
+}
+body{
+	background: url(../img/office.png);
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	color: #cfcfcf;
+}
+header{
+	border-top:2px solid #1d1d1d;
+	border-bottom: 2px solid #1d1d1d;
+	background:#141414;
+	width:100%;
+	text-align:center;
+	margin-top: 15px;
+	height: 95px;
+}
+header nav, #logo{
+	display: inline-block;
+	width: 40%;
+	max-width: 510px;
+}
+header #logo{
+	margin-top: 0px;
+	
+
+}
+header #logo h1{
+  padding-left: 50px; 
+  padding-top: 17px;
+  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: #323232;
+  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+header nav{
+	vertical-align: bottom;
+	margin-top:70px;
+}
+header #logo{
+	vertical-align: top;
+}
+header nav ul li{
+	display: inline;
+}
+header nav ul li a{
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 15px;
+	transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+}
+header nav ul li a:hover{
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}
+header nav ul li ul{
+	display: none;
+	position: absolute;
+	text-align: center;
+	margin-left: -70px;
+	box-shadow: 3px 3px 0px rgba(255,255,255,.2);
+	margin-top: 15px;
+	border-radius: 0 8px 8px 8px;
+	background: #292929;
+	border: #4f4f4f 1px solid;
+	padding: 5px 15px;
+	z-index: 9999;
+}
+header nav ul li:hover ul{
+	display: inline-block;
+}
+header nav ul li ul li{
+	display: block;
+}
+header nav ul li ul li a{
+	margin:0px;
+}
+
+#slider{
+	margin: 12px;
+	width: 80%;
+	max-width: 950px;
+	background: red;
+	height: 250px;
+	display: inline-block;
+}
+#content{
+	border-top:1px solid #1d1d1d;
+	border-bottom: 1px solid #1d1d1d;
+	background:#141414;
+	padding-top: 15px;
+}
+#content aside, article{
+	display: inline-block;
+	vertical-align:top;
+}
+#content aside{
+	width: 25%;
+	max-width: 300px;
+
+}
+#content aside section{
+	margin-bottom: 15px;
+	background: url(../img/office.png);
+	border-radius: 10px;
+	padding: 7px;
+	text-align: justify;
+}
+#content aside section h3{
+	text-transform: uppercase;
+	color: #5c7f94;
+	padding-left: 23px;
+	text-align: left;
+	padding-top: 5px;
+}
+#content aside section h3:first-letter{
+	text-transform: uppercase;
+}
+#content aside section p{
+	padding-left: 8px;
+
+}
+#content aside section p:first-letter{
+	text-transform: uppercase;
+}
+#content article{
+	width: 55%;
+	margin-left: 20px;
+	max-width: 600px;
+}
+#content article section{
+	width: 45%;
+	margin-bottom: 10px;
+	background: url(../img/office.png);
+	border-radius: 10px;
+	padding: 7px;
+	margin-right: 15px;
+	text-align: justify;
+	float: left;
+	vertical-align: baseline;
+}
+#content article section h1{
+	color: #5c7f94;
+	text-align: center;
+}
+#content article section h1:first-letter{
+	text-transform: uppercase;
+}
+footer{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+footer #left, #right{
+	display: inline-block;
+	width: 40%;
+}
+footer a{
+	transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+
+}
+footer a:hover{
+	text-decoration: underline;
+	color: #5c7f94;
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}
