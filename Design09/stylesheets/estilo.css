@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates|Sofadi+One);
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/estilo.scss */
+body {
+  text-align: center;
+  background: url(../img/wallpaper.jpg);
+  /* background tomado de http://www.macoteca.com wallpaper-homer-ipod.jpg */
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+/* line 10, ../sass/estilo.scss */
+nav {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+/* line 16, ../sass/estilo.scss */
+nav ul li {
+  display: inline-block;
+}
+/* line 18, ../sass/estilo.scss */
+nav ul li a {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 15px;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 30px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+}
+/* line 37, ../sass/estilo.scss */
+nav ul li a:hover {
+  padding-top: 30px;
+}
+
+/* line 43, ../sass/estilo.scss */
+header {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-align: left;
+  min-width: 20%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  position: absolute;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  top: 100px;
+  right: 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 54, ../sass/estilo.scss */
+header h1 {
+  font-size: 28px;
+}
+
+/* line 58, ../sass/estilo.scss */
+#content {
+  width: 90%;
+  max-width: 1024px;
+  display: inline-block;
+  margin-top: 250px;
+}
+/* line 65, ../sass/estilo.scss */
+#content article {
+  text-align: center;
+}
+/* line 68, ../sass/estilo.scss */
+#content article h1, #content article h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+/* line 73, ../sass/estilo.scss */
+#content article section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  font-family: 'Sofadi One', cursive;
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+  box-shadow: inset 0 -8px 21px rgba(0, 0, 0, 0.3);
+  color: rgba(25, 25, 25, 0.8);
+}
+/* line 83, ../sass/estilo.scss */
+#content article #principal {
+  margin-bottom: 15px;
+}
+/* line 86, ../sass/estilo.scss */
+#content article #secundario, #content article #tercero, #content article #cuarto {
+  width: 29.5%;
+  margin-left: 0.2%;
+  margin-bottom: 15px;
+}
+/* line 91, ../sass/estilo.scss */
+#content article #secundario {
+  border-radius: 0 0 0 8px;
+}
+/* line 94, ../sass/estilo.scss */
+#content article #cuarto {
+  border-radius: 0 0 8px 0;
+}
+
+/* line 99, ../sass/estilo.scss */
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+}
+/* line 105, ../sass/estilo.scss */
+footer #copy a {
+  color: rgba(255, 0, 0, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 110, ../sass/estilo.scss */
+footer #copy a:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+/* line 115, ../sass/estilo.scss */
+footer aside #box {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin-bottom: 10px;
+}
+/* line 123, ../sass/estilo.scss */
+footer aside #box ul li a {
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin-bottom: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: inset 1px 1px 18px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  transition: all .5s;
+  -o-transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  color: white;
+}
+/* line 138, ../sass/estilo.scss */
+footer aside #box ul li a:hover {
+  box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.8);
+  transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+}
