@@ -1,8 +1,4 @@
 
-##
-#  Windows
-#
-
 # Windows image file caches
 Thumbs.db
 
@@ -12,9 +8,9 @@ Desktop.ini
 # Mac crap
 .DS_Store
 
-##
-#  Linux
-#
-
-.directory
+# Algunos archivos temporales en Linux
 *~
+.directory
+
+# Sass/Compass
+.sass-cache
