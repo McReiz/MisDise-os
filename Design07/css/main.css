@@ -69,16 +69,16 @@ aside, article { background: #eeeeee; text-align: justify; border-radius: 8px; b
 aside section, article section { margin: 15px; }
 
 /* line 181, ../compass/main.scss */
-aside h2, article h2, aside h5, article h5 { text-align: center; }
+aside h2, article h2, aside h5, article h5 { text-align: center; font-weight: bold; }
 
-/* line 185, ../compass/main.scss */
+/* line 186, ../compass/main.scss */
 aside { width: 300px; }
 
-/* line 189, ../compass/main.scss */
+/* line 190, ../compass/main.scss */
 article { width: 630px; }
 
-/* line 193, ../compass/main.scss */
+/* line 194, ../compass/main.scss */
 footer { margin-top: 10px; }
 
-/* line 197, ../compass/main.scss */
+/* line 198, ../compass/main.scss */
 a[title="reiz"] { font-weight: bold; color: #0b7096; }
