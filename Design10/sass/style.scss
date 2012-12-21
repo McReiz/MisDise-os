@@ -1,0 +1,478 @@
+@import "_mixinyvariables.scss";
+
+/* estilos */
+
+a{
+	color:$color-1;
+	text-decoration: none;
+	&:hover{
+		text-decoration:underline;
+	}
+}
+
+body{
+	background: url(../images/shattered.png) $color-fondo;
+	text-align: center;
+	overflow-x:hidden; 
+}
+/* cabezera */
+.menu-r{
+	display: none;
+}
+#main-nav{
+	display: none;
+}
+#h-normal{
+	width: 100%;
+	background: url(../images/gray_jean.png) ;
+	border-bottom: 1px solid #bdbdbd;
+	vertical-align:top;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	height: 120px;
+	
+	
+	#wrapper-h{
+		display: block;
+		max-width: 1024px;
+		width: 80%;
+		padding: 15px;
+		text-align: left;
+		margin: 0 auto;
+		#redondo{
+			padding: 6.5px 10px;
+			vertical-align:top;
+			cursor:pointer;
+			color: white;
+			font-weight:bold;
+			box-shadow: 0px 0px 8px $color-2, 
+						inset 0px 0px 35px $color-2;
+			border: 1px dashed rgba(255,255,255,.5);
+			border-radius: 50px;
+			display: inline-block;
+			-webkit-animation: rueda 5s infinite linear;
+			-moz-animation: rueda 5s infinite linear;
+			animation: rueda 5s infinite linear;
+		}
+		h1{
+			font-size: 30px;
+			display: inline-block;
+			font-weight:bold;
+			color:$color-fondo;
+			@include font2;
+			text-shadow: 0px 0px 5px rgba(0,0,0,.2), 
+					4px 4px 5px $color-1,
+					-4px -4px 5px $color-2,
+					-4px 4px 5px $color-3,
+					4px -4px 5px $color-3;
+					
+		}
+		span{
+			font-weight: bold;
+			display: block;
+			@include font1;
+			font-size:15px;
+		}
+	}
+	/* estilo del menu*/
+	nav{
+		@include gradient;
+		@include font2;
+		display: inline-block;
+		position:relative;
+		top:26px;
+		max-height:32px;
+		width: auto;
+		padding:{
+			left:15px;
+			right: 15px;
+		}
+		ul{
+			list-style: none;
+			
+			li{
+				display: inline-block;
+				vertical-align:top;
+				
+				span{
+					display: inline-block;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					transform: rotate(90deg);
+					color: black;
+				}
+				
+				a{
+					display: block;
+					color: white;
+					text-decoration:none;
+					font-weight:bold;
+					padding: 8px;
+					-webkit-transition: .5s all;
+					-moz-transition: .5s all;
+					transition: .5s all;
+					
+					&:hover{
+						background: -webkit-linear-gradient(#edde45,#fff26d);
+						background: -moz-linear-gradient(#edde45,#fff26d);
+						background: linear-gradient(#edde45,#fff26d);
+						outline: 1px solid #bcaf27;
+						text-shadow: 0px 0px 5px rgba(0,0,0,.9);
+					}
+				}a[href="#"]{
+					color: black;
+				}
+				ul{
+					display:none;
+					width: auto;
+					top: 2px;
+					position: relative;
+					z-index:999;
+					
+					li{
+						display:block;
+						background: $color-fondo;
+
+						margin-top:1px;
+					}
+
+				}
+				&:hover{
+					ul{
+						display: inline-block;
+					}
+					span{
+						color:white;
+					}
+					li:nth-child(1){
+						-webkit-animation: sub-menu 1s linear .2s;
+						-moz-animation: sub-menu 1s linear .2s;
+						animation: sub-menu 1s linear .2s;
+						
+					}
+					li:nth-child(2){
+						-webkit-animation: sub-menu 1s linear .4s;
+						-moz-animation: sub-menu 1s linear .4s;
+						animation: sub-menu 1s linear .4s;
+					}
+					li:nth-child(3){
+						-webkit-animation: sub-menu 1s linear .6s;
+						-moz-animation: sub-menu 1s linear .6s;
+						animation: sub-menu 1s linear .6s;
+						
+					}
+					li:nth-child(4){
+						-webkit-animation: sub-menu 1s linear .8s;
+						-moz-animation: sub-menu 1s linear .8s;
+						animation: sub-menu 1s linear .8s;
+					}
+				}
+			}
+		}
+	}
+}
+/* estilo del menu responsive*/
+.menu-r {
+	@include gradient;
+	padding: 5px;
+	margin-left: 10px;
+	text-align: center;
+	color: white;
+	border-radius: 8px;
+	margin:10px;
+}
+.menu-r .toggle-menu {
+	color: white;
+	width: 100%;
+	display: block;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.page-wrap {
+	display: block;
+}
+
+.main-nav-check {
+	display: none;
+}
+
+.main-nav { 
+	width: auto;
+	display: none;
+	height: auto;
+	background: #3B3B3B;
+	overflow: hidden;
+}
+.main-nav a {
+	display: block;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: linear-gradient(#3e3e3e, #383838);
+	border-top: 1px solid #484848;
+	border-bottom: 1px solid #2E2E2E;
+	color: white;
+	padding: 15px;
+}
+.main-nav a:hover, .main-nav a:focus {
+	background: linear-gradient(#484848, #383838);
+}
+.main-nav:after {
+	content: "";
+	height: auto;
+	width: 34px;
+	background: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.content {
+	padding: 15px;
+}
+
+.close-menu {
+	display: none;
+}
+
+#main-nav-check:checked + #main-nav {
+	width: 100%!important;
+	display: block;
+}
+
+#main-nav-check:checked ~ .page-wrap {
+
+}
+#main-nav-check:checked ~ .page-wrap  {
+	display: none;
+}
+#main-nav-check:checked ~ .page-wrap  {
+	display: block;
+}
+#main-nav-check:checked ~ .page-wrap .menu-r {
+
+}
+
+/* slider */
+#slider{
+	width: 80%;
+	min-height: 300px;
+	max-width: 1024px;
+	margin: 20px 0;
+	display: inline-block;
+}
+/* diseño de los articles y aside */
+#wrapper{
+	width: 100%;
+	background: url(../images/gray_jean.png) ;
+	border-top: 2px solid #bdbdbd;
+	border-bottom: 2px solid #bdbdbd;
+	vertical-align:top;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	article, aside{
+		display: inline-block;
+		vertical-align:top;
+	}
+	article{
+		width: 49%;
+		max-width: 659px;
+		
+		section{
+			@include font3;
+			margin: 0px 10px 15px 10px;
+			background: $color-fondo;
+			padding:10px;
+			border: 1px solid #e2d3cd;
+			-webkit-transition: .5s all;
+			-moz-transition: .5s all;
+			transition: .5s all;
+			border-radius:8px;
+			box-shadow:inset 1px 1px 3px rgba(255,255,255,.5);
+			
+			h2{
+				color: $color-1;
+				font:{weight:bold;size:25px;}
+				border-bottom: 1px dashed $color-1;
+				
+				&:hover{
+					color: $color-2;
+					border-bottom: 1px dashed $color-2;
+				}
+			}
+			#date{
+				font:{weight:bold;size: 11px;}
+				color:gray;
+				
+				#autor,#fecha,#categoria{
+					display:inline-block;
+					margin-left: 5px;
+				}
+			}
+			#cont{
+				text-align: justify;
+				margin-top:10px;
+				color: rgba(0,0,0,.8);
+			}
+			&:hover{
+				-webkit-transform: scale(1.03);
+				-moz-transform: scale(1.03);
+				transform: scale(1.03);
+			}
+		}
+		label{
+			display: block;
+			text-align: left;
+			@include font1;
+			margin-bottom:10px;
+			border-radius:8px;
+			box-shadow:inset 1px 1px 3px rgba(255,255,255,.5);
+			background: $color-fondo;
+			padding:10px;
+			cursor: text;
+			border: 1px solid #e2d3cd;
+			
+			p{
+				display: inline-block;
+				width: auto;
+				color:gray;
+				font-weight: bold;
+				vertical-align:top;
+			}
+			input{
+				border:0px;
+				outline:none;
+				padding:0px;
+				margin:0px;
+				vertical-align: top;
+				color:gray;
+				font-size: 15px;
+				background: $color-fondo;
+				width: 79%;
+				
+			}
+			textarea{
+				border: 0px;
+				margin: 0px;
+				color:gray;
+				outline:none;
+				padding: 0px;
+				max-width: 80%;
+				min-width:80%;
+				background-color: $color-fondo;
+			}
+		}
+		input[type="submit"]{
+			border: 0px;
+			margin: 0px;
+			cursor: pointer;
+			padding: 0px;
+			border-radius:8px;
+			box-shadow:inset 1px 1px 3px rgba(255,255,255,.5);
+			background: $color-fondo;
+			padding:10px;
+			border: 1px solid #e2d3cd;
+			font-weight:bold;
+			color: gray;
+		}
+		input[type="submit"]:hover{
+			box-shadow:inset -1px -1px 2px rgba(255,255,255,.5);
+		}
+		#page-nav{
+			width: 90%;
+			display: inline-block;
+			vertical-align: top;
+			
+			ul li{
+				display:inline-block;
+				
+				a{
+					display: block;
+					padding: 5px 10px;
+					border-radius:8px;
+					box-shadow:inset 1px 1px 3px rgba(255,255,255,.5);
+					background: $color-fondo;
+					border: 1px solid #e2d3cd;
+					
+					&:hover{
+						box-shadow:inset 1px 1px 5px rgba(0,0,0,.5);
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+	aside{
+		background: url(../images/shattered.png) $color-fondo;
+		width: 29%;
+		max-width: 350px;
+		border-radius:8px;
+		@include font1;
+		box-shadow: inset 0px 0px 8px rgba(0,0,0,.5);
+		min-height: 150px;
+		#box{
+			margin-bottom: 10px;
+			#title{
+				@include gradient;
+				padding: 5px;
+				margin: 5px;
+				font-weight:bold;
+				color: white;
+			}
+			#cont{
+				background: url(../images/gray_jean.png);
+				padding: 7px;
+				color: rgba(0,0,0,.8);
+				margin: 5px;
+				text-align: justify;
+				border-radius:8px;
+				box-shadow: 0px 0px 5px rgba(0,0,0,.2);	
+				border: 2px solid #bdbdbd;
+			}
+		}
+	}
+}
+#footer{
+	padding:10px;
+	@include font2;
+}
+
+
+/* selectores y animaciones */
+::selection{
+	text-shadow: 0px 0px 8px rgba(0,0,0,1),0px 0px 10px $color-fondo, 0px 0px 12px $color-1, 0px 0px 8px $color-2;
+}
+::-moz-selection{
+	text-shadow: 0px 0px 8px rgba(0,0,0,1),0px 0px 10px $color-fondo, 0px 0px 12px $color-1, 0px 0px 8px $color-2;
+}
+/* animacion para la rueda del titulo */
+@-webkit-keyframes rueda{
+	0%{ -webkit-transform:rotate(0deg); box-shadow: 0px 0px 8px $color-2, inset 0px 0px 35px $color-2;}
+	30%{box-shadow: 0px 0px 8px $color-3, inset 0px 0px 35px $color-3;}
+	70%{box-shadow: 0px 0px 8px $color-1, inset 0px 0px 35px $color-1;}
+	100%{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes rueda{
+	0%{ -moz-transform:rotate(0deg); box-shadow: 0px 0px 8px $color-2, inset 0px 0px 35px $color-2;}
+	30%{box-shadow: 0px 0px 8px $color-3, inset 0px 0px 35px $color-3;}
+	70%{box-shadow: 0px 0px 8px $color-1, inset 0px 0px 35px $color-1;}
+	100%{-moz-transform:rotate(360deg);}
+}
+@keyframes rueda{
+	0%{transform:rotate(0deg); box-shadow: 0px 0px 8px $color-2, inset 0px 0px 35px $color-2;}
+	30%{box-shadow: 0px 0px 8px $color-3, inset 0px 0px 35px $color-3;}
+	70%{box-shadow: 0px 0px 8px $color-1, inset 0px 0px 35px $color-1;}
+	100%{transform:rotate(360deg);}
+}
+/* animacion para los submenus */
+@-webkit-keyframes sub-menu{
+	0%{-webkit-transform:rotateY(0deg);}
+	100%{-webkit-transform:rotateY(360deg)}
+}
+@-moz-keyframes sub-menu{
+	0%{-moz-transform:rotateY(0deg);}
+	100%{-moz-transform:rotateY(360deg)}
+}
+@keyframes sub-menu{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(360deg)}
+}

@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Monda|Archivo+Narrow|Englebert);
+@mixin font1{
+	font-family: 'Monda', sans-serif;
+}
+@mixin font2{
+	font-family: 'Archivo Narrow', sans-serif;
+}
+@mixin font3{
+	font-family: 'Englebert', Fjalla+One;
+}
+/* hack compass y reset */
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* variables */
+
+$color-fondo: rgba(237,229,226,1);
+$color-1: rgba(234,53,86,1);
+$color-2: rgba(97,210,214,1);
+$color-3: rgba(237,222,69,1);
+
+@mixin gradient{
+	background: $color-3;
+	background: -webkit-linear-gradient(#fff26d,#edde45);
+	background: -moz-linear-gradient(#fff26d,#edde45);
+	background: linear-gradient(#fff26d,#edde45);
+	border-radius:8px;
+	border: 1px solid #bcaf27;
+	box-shadow:0px 3px 8px -3px rgba(0,0,0,.5),
+			inset 1px 1px 2px rgba(255,255,255,1) ;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>ReizWeb - Design n#10</title>
+<!-- style -->
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/scroll.css" rel="stylesheet" type="text/css" />
+
+<!-- slider style -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/style_alt.css" />
+<!-- responsive style -->
+<link href="stylesheets/responsive.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- jmpress plugin -->
+<script type="text/javascript" src="js/jmpress.min.js"></script>
+<!-- jmslideshow plugin : extends the jmpress plugin -->
+<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.48780.js"></script>
+<noscript>
+	<style>
+		.step {
+			width: 100%;
+			position: relative;
+		}
+		.step:not(.active) {
+			opacity: 1;
+			filter: alpha(opacity=99);
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+		}
+		.step:not(.active) a.jms-link{
+			opacity: 1;
+			margin-top: 40px;
+		}
+	</style>
+</noscript>
+</head>
+<body>
+<!-- header responsive webdesign solo muestra en las resoluciones mas pequeñas como :420px -->
+<input type="checkbox" class="main-nav-check" id="main-nav-check" />
+<nav class="main-nav" id="main-nav">
+	<a href="index.html">inicio</a>
+	<a href="#">blog</a>
+	<a href="#">comunidad</a>
+	<a href="#"> - foro</a>
+	<a href="#"> - libro de visitas</a>
+	<a href="#"> - top sites</a>
+	<a href="#"> - encuentranos</a>
+	<a href="#">about</a>
+	<a href="contacto.html">contacto</a>
+</nav>
+
+
+<!-- cabezera del diseño -->
+<header id="h-normal">
+	<div id="wrapper-h">
+		<a href="index.html"><div id="redondo">+</div><h1>Diseño web n#10</h1></a>
+		<span>me siento orgulloso de tener mi diseño numero 10.</span>
+	</div>
+	<div class="menu-r">
+		<label for="main-nav-check" class="toggle-menu">
+			menu
+		</label>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">inicio</a></li>
+			<li><a href="#">blog</a></li>
+			<li><a href="#">comunidad <span>»</span></a>
+				<ul>
+					<li><a href="#">foro</a></li>
+					<li><a href="#">libro de visitas</a></li>
+					<li><a href="#">top sites</a></li>
+					<li><a href="#">encuentranos</a></li>
+				</ul>
+			</li>
+			<li><a href="#">about</a></li>
+			<li><a href="contacto.html">contacto</a></li>
+		</ul>
+	</nav>
+</header>
+<!-- slider -->
+<div id="slider">
+	<section id="jms-slideshow" class="jms-slideshow">
+		<div class="step" data-color="color-1" data-x="2000" data-y="1000" data-z="3000" data-rotate="-20">
+			<div class="jms-content">
+				<h3>Just when I thought...</h3>
+				<p>From fairest creatures we desire increase, that thereby beauty's rose might never die</p>
+				<a class="jms-link" href="#">Leer mas</a>
+			</div>
+			<img src="images/1.png" />
+			</div>
+			<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
+				<div class="jms-content">
+					<h3>Holy cannoli!</h3>
+					<p>But as the riper should by time decease, his tender heir might bear his memory</p>
+					<a class="jms-link" href="#">Leer mas</a>
+				</div>
+				<img src="images/2.png" />
+			</div>
+			<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
+				<div class="jms-content">
+					<h3>No time to waste</h3>
+					<p>Within thine own bud buriest thy content and, tender churl, makest waste in niggarding</p>
+					<a class="jms-link" href="#">Leer mas</a>
+				</div>
+				<img src="images/3.png" />
+			</div>
+			<div class="step" data-color="color-4" data-x="3000" data-y="2000">
+				<div class="jms-content">
+					<h3>Supercool!</h3>
+					<p>Making a famine where abundance lies, thyself thy foe, to thy sweet self too cruel</p>
+					<a class="jms-link" href="#">Leer mas</a>
+				</div>
+				<img src="images/4.png" />
+			</div>
+			<div class="step" data-color="color-5" data-x="4000" data-y="1500" data-z="1000" data-rotate="-20">
+				<div class="jms-content">
+					<h3>Did you know that...</h3>
+					<p>Thou that art now the world's fresh ornament and only herald to the gaudy spring</p>
+					<a class="jms-link" href="#">Leer mas</a>
+				</div>
+				<img src="images/5.png" />
+			</div>
+		</section>
+    </div>
+	<script type="text/javascript">
+		$(function() {
+			
+			$( '#jms-slideshow' ).jmslideshow();
+				
+		});
+	</script>
+</div>
+<!-- cuerpo -->
+<div id="wrapper">
+	<!-- noticias, articulos, etc -->
+	<article>
+		<section>
+			<h2>titulo de la noticia</h2>
+			<div id="date">
+				<div id="autor">Autor: McReiz,</div><div id="fecha">Fecha: 18/12/2012,</div><div id="categoria">Categoria: explicacion</div>
+			</div>
+			<div id="cont">contenido de la noticia</div>
+		</section>
+		<section>
+			<h2>Espero que les guste este diseño</h2>
+			<div id="date">
+				<div id="autor">Autor: McReiz,</div><div id="fecha">Fecha: 18/12/2012,</div><div id="categoria">Categoria: Global</div>
+			</div>
+			<div id="cont">este diseño lo hice como mucho esmero y amor y por que no tenia mas nada que hacer en mi tiempo sin internet xd espero que deberas te guste este diseño rock and roll y diseño web lo mejor que hay a la ahora de distraerme xd</div>
+		</section>
+		
+		<section>
+			<h2>Reiz se a quedado sin internet señal del fin del mundo?</h2>
+			<div id="date">
+				<div id="autor">Autor: McReiz,</div><div id="fecha">Fecha: 17/12/2012,</div><div id="categoria">Categoria: Global</div>
+			</div>
+			<div id="cont">Hoy llega la primera señal de que el fin del mundo se aproxima y es que a reiz se a quedado sin internet, una prueba muy clara de que el fin del mundo se aproxima y mas sercano de lo que usted cree pues el mundo se acaba el 21 de diciembre ... de esta año, pero como se acabara el mundo?. <br /><br /> ps la respuesta es facil abra un apocalypsis zombie el 21 de diciembre, otra hipotesis es que los aliens vendran a invadir!, asi que busquen refugio.</div>
+		</section>
+	
+	<div id="page-nav">
+		<ul>
+			<li><a href="#">«</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">»</a></li>
+		</ul>
+	</div>
+	</article>
+	<!-- sidebar -->
+	<aside>
+		<div id="box">
+			<div id="title">Titulo del box</div>
+			<div id="cont">contenido del box, bueno yo no sabia que otro contenido agregarle a este box asi que le puso esta contenido de relleno, no use lorem ipsum por que no tenia internet para buscarlo en google xd</div>
+		</div>
+		<div id="box">
+			<div id="title">Titulo del box</div>
+			<div id="cont">esto es un texto de relleno improvisado por que no tenia internet para buscar en google lorem ipsum, asi que tuve que forzar mi cerebro para hacer este texto de relleno, esta original no? maldito internet ¬¬</div>
+		</div>
+	</aside>
+</div>
+<footer id="footer">&copy;Todos los derechos reservados. 2012 - 2013(si es que hay 2013). | Design by <a href="http://reizweb.net" target="_blank">McReiz</a></footer>
+
+</body>
+</html>

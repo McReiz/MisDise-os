@@ -1,0 +1,80 @@
+@import "_mixinyvariables.scss";
+
+@media only screen and (max-width: 768px){
+	body{
+		
+	}
+	#h-normal{
+		#wrapper-h{
+			width:95%;
+		}
+	}
+	#slider{
+		width: 100%;
+	}
+	#wrapper{
+		
+		article{
+			width: 60%;
+		}
+		aside{
+			width: 35%;
+		}
+	}
+	
+}
+@media only screen and (max-width: 640px){
+
+	#h-normal{
+		
+		nav{
+			display: none;
+		}
+		.menu-r{
+			display: block;
+			
+		}
+		#wrapper-h{
+			text-align: center;
+		}
+	}
+	#slider{
+		.jms-slideshow{
+			height: 250px;
+		}
+		.jms-wrapper{
+			height:250px;
+		}
+	}
+	#wrapper{
+		article,aside{
+			width: 95%;
+		}
+		article{	
+			padding-bottom:10px;
+		}
+	}
+}
+@media only screen and (max-width: 320px){
+	.step h3{
+		font-size: 3.2em;
+		text-shadow: 2px 2px 8px rgba(0,0,0,1);
+	}
+	.step p {
+		font-size: 3.2em;
+		text-shadow: 2px 2px 8px rgba(0,0,0,1);
+	}
+	.jms-dots{
+		bottom: 5px;
+	}
+	.jms-arrows span.jms-arrows-prev{
+		opacity: .5;
+	}
+	.jms-arrows  span.jms-arrows-next{
+		opacity: .5;
+	}
+	a.jms-link{
+		font-size: 3.2em;
+		border-radius: 8px;
+	}
+}
