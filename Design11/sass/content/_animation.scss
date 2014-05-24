@@ -1,0 +1,38 @@
+/* -------------------------- Animaciones en webkit ------------------------*/
+@-webkit-keyframes menu{
+	1%{
+		-webkit-transform: translate(0px);
+	}
+	50%{
+		-webkit-transform: translate(15px);
+	}
+	100%{
+		-webkit-transform: translate(0px);
+	}
+}
+
+/* -------------------------- Animaciones en moz ------------------------*/
+@-moz-keyframes menu{
+	1%{
+		-moz-transform: translate(0px);
+	}
+	50%{
+		-moz-transform: translate(15px);
+	}
+	100%{
+		-moz-transform: translate(0px);
+	}
+}
+
+/* -------------------------- Animaciones sin prefix ------------------------*/
+keyframes menu{
+	1%{
+		transform: translate(0px);
+	}
+	50%{
+		transform: translate(15px);
+	}
+	100%{
+		transform: translate(0px);
+	}
+}

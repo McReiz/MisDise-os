@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|PT+Sans|PT+Mono);
+
+@mixin Font-1($size){
+	font-family: 'Source Sans Pro', 'sans-serif';
+	font-size: $size;
+}
+@mixin Font-2($size){
+	font-family: 'Droid Sans', 'sans-serif';
+	font-size: $size;
+}
+@mixin Font-3($size){
+	font-family: 'PT Sans', 'sans-serif';	
+	font-size: $size;
+}
+@mixin Font-4($size){
+	font-family: 'PT Mono', '';
+	font-size: $size;
+}
+@mixin Radial-1{
+	border: 1px solid transparent;
+	border-radius: 2px;
+	box-shadow: 3px 3px 8px rgba(0,0,0,.3), inset 1px 1px 0px rgba(255,255,255,.5);
+}
+@mixin Radial-2{
+	border: 1px solid transparent;
+	border-radius: 0px 0px 2px 2px;
+	box-shadow: 3px 3px 8px rgba(0,0,0,.3), inset 1px 0px 0px rgba(255,255,255,.5);
+}
+/* para le off */
+@mixin Radial-3{
+	border: 1px solid transparent;
+	border-radius: 2px;
+	box-shadow: 3px 3px 8px rgba(0,0,0,.3), inset 1px 1px 0px rgba(255,255,255,.1);
+}
+@mixin Radial-4{
+	border: 1px solid transparent;
+	border-radius: 0px 0px 2px 2px;
+	box-shadow: 3px 3px 8px rgba(0,0,0,.3), inset 1px 0px 0px rgba(255,255,255,.1);
+}

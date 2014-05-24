@@ -1,0 +1,79 @@
+/* -------------- Mixins, principales y variables ------------------ */
+@import "./content/_MixinsFonts.scss";
+
+/* colores descartados */
+$color-0: rgb(2,25,25);
+$color-1: rgb(220,220,230);
+$color-2: rgba(220,0,60,1);
+/* final */
+
+$color-3: rgba(51,51,51,1);/*gris*/
+$gris: rgba(102,102,102,1);/* gris claro */
+$gris-2: rgba(204,204,204,1);/* gris mas claro */
+
+$amarillo: rgba(237,222,69,1);
+$azul: rgba(97,210,214,1);
+$rojo: rgba(234,53,86,1);
+$naranja: rgba(254,90,39,1);
+
+*{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s background, .2s color;
+}
+
+body{
+	background: url('../images/Background-1.png') $color-1;
+	text-align: center;
+	color: black;
+}
+a{
+	text-decoration: none;	
+	color: black;
+
+	&:hover{
+		color: $rojo;
+	}
+}
+.on-of{
+	color: white;
+	font-size: 30px;
+	padding: 10px 12px;
+	background: $amarillo;
+	@include Radial-2;
+	&:hover{
+		text-decoration:none;
+		color: white;
+	}
+}
+
+/* ---------------------- Cabezeras / Headers ----------------------- */
+@import "./content/_head.scss";
+
+/* ---------------------- Cuerpo / body ----------------------------- */
+@import "./content/_body.scss";
+
+/* ---------------------- Pies / footer ----------------------------- */
+@import "./content/_footer.scss";
+/* ---------------------Efectos, actives, extras -------------------- */
+.active{
+	background: white !important;
+}
+.off{
+
+	@import "./content/_off.scss";
+
+	background: url('../images/Oscuridad.png') $color-0;
+	color: white;
+
+	a{
+		color: white;
+	}
+	.on-of{
+		color: black;
+		background: $color-3;
+		@include Radial-4;
+	}
+}
+/* ---------------------- animaciones ------------------------------- */
+@import "./content/_animation.scss"

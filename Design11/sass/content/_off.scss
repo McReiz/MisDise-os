@@ -1,0 +1,92 @@
+
+
+/* Cabezera en off */
+header{
+	#HeadContent{
+		#logo h1{
+			color: $gris-2;
+		}
+	}
+	nav{
+		background: $color-3;
+		@include Radial-3;
+
+		a{
+			color: white;
+		}
+		li ul li{
+			background: $color-3;
+		}
+	}
+}
+img{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+/* Cuerpo en off */
+#slider{
+	#contenidos{
+		section{
+			h2{
+				background: $gris;
+			}
+		}
+	}
+}
+
+section{
+	#ubicacion{
+		background: $color-3;
+		@include Radial-3;
+	}
+	#widget{
+		background: $gris-2;
+	}
+	article{
+		#info{
+
+			h3{
+				background: $gris-2;
+			}
+			#Data{
+				#DataTime, #CommentCounts, #ReadMore{
+					background: $gris-2;
+				}
+			}
+		}
+	}
+	#PageNav .nav{
+		background: $gris-2;
+	}
+}
+aside{
+	#redes{
+		.redes{
+			background: $color-3;
+		}
+	}
+	section{
+		h3{
+			background: $gris;
+		}
+	}
+}
+
+
+/* Pies en off */
+footer{
+	#Copyright{
+		background: $color-3;
+
+		@include Radial-3;
+	}
+	menu{
+		h3{
+			background: $gris;
+		}
+	}
+}

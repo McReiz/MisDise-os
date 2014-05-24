@@ -1,0 +1,305 @@
+#slider{
+	background: url('../images/Ilumunidado.png') rgba(237,229,226,.8);	
+	color: white;
+	margin-top: 15px;
+	display: inline-block;
+	width: 950px;
+	height: 380px;
+	position: relative;
+	@include Font-4(13px);
+	@include Radial-1;
+
+	#contenidos{
+
+		section{
+			display: none;
+			float: left;
+			width: 950px;
+			height: 380px;
+			position: relative;
+		}
+		.Left-Position, .Center-Position, .Right-Position{
+			img{
+				position: absolute;
+				
+			}
+			h2{
+				position: absolute;
+				background: $azul;
+				display: inline-block;
+				font-weight: bold;
+				@include Font-4(30px);
+				box-shadow: 3px 3px 8px rgba(0,0,0,.2);
+				padding: 10px;
+
+				a{
+					color: white;
+				}
+				&.amarrillo{
+					background: $amarillo;
+				}
+			}
+
+			span{
+				color: rgba(255,255,255,1);
+				position: absolute;
+				max-width: 450px;
+				font-size: 18px;
+				padding: 5px;
+				text-shadow: 3px 3px 8px rgba(0,0,0,.5);
+				text-align: justify;
+			}
+		}
+
+		.Left-Position{
+			img{
+				top: 60px;
+				right: 140px;
+			}
+			h2{
+				left: 10%;
+				top:40px; 
+			}
+			span{
+				left: 0px;
+				top: 120px;
+			}
+		}
+		.Center-Position{
+			img{
+				top:60px;
+				left: 50%;
+				margin-left: -100px;
+			}
+			h2{
+				top: 20px;
+				left: 100px;
+			}
+			span{
+				right: 5%;
+				top: 120px;
+			}
+		}
+		.Right-Position{
+			img{
+				top: 60px;
+				left: 140px;
+			}
+			h2{
+				right: 10%;
+				top:40px; 
+			}
+			span{
+				right: 5%;
+				top: 120px;
+			}
+		}
+		.activado{
+			display: block;
+		}
+	}
+}
+
+/* El contenido y el la barra lateral */
+
+section, aside{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	@include Font-3(14px);
+}
+section{
+	width:720px;
+	-webkit-perspective:500px;
+	perspective:500px;
+
+	#ubicacion{
+		@include Radial-1;
+		background: $amarillo;
+		padding: 5px;
+		color: 	white;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	/* El menu del inicio */
+	#widget{
+		
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		display: block;
+		margin-top: 15px;
+		background: $azul;
+		color: white;
+		transition: .3s all linear; 
+		-webkit-transform: rotateX(15deg) scale(0.95,0.95);
+		transform: rotateX(15deg);
+		text-align: left;
+		box-shadow: 3px 3px 8px rgba(0,0,0,.3);
+
+		#icon-head, #content {
+			display: inline-block;
+			vertical-align: top;
+			margin: 10px;
+			padding: 10px 20px;
+		}
+		#icon-head{
+			font-size: 90px;
+			border-right: 3px solid white;
+			max-width: 130px;
+			min-width: 130px; 
+		}
+		#content{
+			min-width: 460px;
+			max-width: 460px;
+
+			h2{
+				font-size: 17px;
+				font-weight: bold;
+				color: white;
+			}
+		}
+		&:hover{
+			transform: rotateX(0deg);
+			-webkit-transform: rotateX(0deg);
+			text-decoration: none;
+		}
+	}
+	/* Los articulos para el blog */
+	article{
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+		position: relative;
+		margin-left: 1%;
+		margin-top: 12px;
+
+		.ImgOpti{
+			max-width: 100%;
+			background-size: cover;
+		}
+		#info{
+			opacity: 0;
+			transition: .5s all;
+			h3{
+				margin: 0px;
+				background: $azul;
+				padding: 5px;
+				color: white;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				max-width: 220px;
+			}
+			#Data{
+				position: absolute;
+				margin: 0px;
+				right: 5px;
+				top: 5px;
+				color: white;
+				width: 110px;
+
+				#DataTime, #CommentCounts, #ReadMore{
+					margin-bottom: 3px;
+					background: $azul;
+					padding: 5px;
+					display: inline-block;
+					width: 100%;
+				}
+				#ReadMore{
+					
+					color: white;
+					
+					&:hover{
+						color:$rojo;
+					}
+					
+				}
+			}
+			span{
+				text-align: justify;
+				position: absolute;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				padding: 5px;
+			}
+
+		}
+		&:hover{
+			box-shadow: 3px 3px 8px rgba(0,0,0,.5);
+			#info{
+				opacity: 1;
+			}
+		}
+	}
+	#PageNav{
+		margin-top: 15px;
+		.nav{
+			list-style: none;
+			display: inline-block;
+			background: $azul;
+			color: white;
+			padding: 10px;
+			vertical-align: top;
+			height: 35px;
+		}
+	}
+}
+/* la barra latera */
+aside{
+	width: 225px;
+
+
+	.redes{
+		
+		color: white;
+		padding: 10px 12.7px;
+		font-size: 39px;
+		/*width: 43px;*/
+		transition: .5s all;
+	}
+	.fa-facebook{
+		background: #4b67a8 ;
+	}
+	.fa-google-plus{
+		background:#d73d32;
+	}
+	section{
+		margin-top: 10px;
+		width: 100%;
+
+		h3{
+			padding: 7px;
+			color: white;
+			background: $naranja;
+			font-weight: bold;
+			@include Font-2(16px);
+			box-shadow: 3px 3px 8px rgba(0,0,0,.3);
+		}
+		span{
+			display: block;
+			padding: 9px;
+			text-align: justify;
+			margin-top: 7px;
+			background: rgba(0,0,0,.05);
+
+			ul{
+				list-style-type:square;
+				text-align: left;
+				display: block;
+				padding-left: 15px;
+				color: black;
+				li{
+					padding: 2px;
+					a{
+						color: black;
+
+						&:hover{
+							text-decoration:underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}

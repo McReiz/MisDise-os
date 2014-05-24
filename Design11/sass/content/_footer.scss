@@ -1,0 +1,45 @@
+footer{
+	width: 950px;
+	margin-top: 25px;
+	display: inline-block;
+	color: white;
+	@include Font-3(16px);
+
+
+	#Copyright{
+		background: $amarillo;
+		padding: 12px;
+		font-weight: bold;
+		@include Radial-1;
+	}
+	menu{
+		padding: 0px;
+		display: inline-block;
+		vertical-align: top;
+		width: 234.5px;
+		margin-top: 10px;
+		color: black;
+		margin-bottom: 15px;
+		h3{
+			background: $naranja;
+			padding: 5px;
+			color: white;
+			font-weight: bold;
+			font-size: 17px;
+			box-shadow: 3px 3px 8px rgba(0,0,0,.3);
+		}
+		li{
+			text-align: left;
+			margin-left: 5px;
+			margin-top: 8px;
+
+			a{
+				display: block;
+
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
