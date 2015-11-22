@@ -14,3 +14,5 @@ Desktop.ini
 
 # Sass/Compass
 .sass-cache
+*.zip
+*.rar

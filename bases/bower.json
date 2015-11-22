@@ -1,0 +1,26 @@
+{
+  "name": "ReizInit base",
+  "authors": [
+    "el Reiz <xreizonx@gmail.com>"
+  ],
+  "description": "Mis archivos bases para el desarrollo de sitios webs",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "normalize-strings": "normalize#~1.0.4",
+    "photoswipe": "~4.1.0",
+    "normalize.css": "~3.0.3",
+    "polymer": "~1.2.3",
+    "scrollmagic": "~2.0.5",
+    "select2": "~4.0.0",
+    "scrollreveal": "scrollReveal.js#~2.3.2",
+    "slick": "*",
+    "Snap.svg": "snap.svg#~0.4.1",
+    "three.js": "threejs#*"
+  }
+}
