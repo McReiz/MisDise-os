@@ -10,7 +10,7 @@
     "author": "Dmitry Baranovskiy",
     "license": "Apache License v2",
     "dependencies": {
-        "eve": "~0.4.2"
+        "eve": "~0.5.4"
     },
     "devDependencies": {
         "grunt": "~0.4.1",
